@@ -17,30 +17,24 @@ export const CountrySelector = ({ onCountrySelect }: CountrySelectorProps) => {
     <div className="w-full space-y-6">
       <div className="text-center space-y-2">
         <h2 className="text-xl font-semibold text-card-foreground">
-          Which country do you reside in?
+        What type of device are you using?
         </h2>
         <p className="text-sm text-muted-foreground">
-          This reward is currently limited to specific regions. Please confirm your location.
+Please select your device so we can optimize rewards for you.
         </p>
       </div>
 
       <div className="w-full max-w-xs mx-auto">
         <Select onValueChange={handleValueChange} value={selectedCountry}>
           <SelectTrigger className="w-full h-12 bg-card border-border">
-            <SelectValue placeholder="Select your country" />
+            <SelectValue placeholder="Select your device" />
           </SelectTrigger>
           <SelectContent className="bg-card border-border">
             <SelectItem value="united-states" className="h-12">
-              United States
+              iOS
             </SelectItem>
             <SelectItem value="canada" className="h-12">
-              Canada
-            </SelectItem>
-            <SelectItem value="australia" className="h-12">
-              Australia
-            </SelectItem>
-            <SelectItem value="united-kingdom" className="h-12">
-              United Kingdom
+              Android
             </SelectItem>
           </SelectContent>
         </Select>
