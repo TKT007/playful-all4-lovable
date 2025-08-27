@@ -33,10 +33,12 @@ const handleComplete = () => {
       <div className="flex-1 flex items-center justify-center px-4 py-8">
         <div className="w-full max-w-md">
           <div className="bg-card rounded-2xl shadow-lg p-8 space-y-8">
-            {/* Logo */}
-            <div className="text-center">
-              <RewardLogo className="mb-4" />
-            </div>
+            {/* Show RewardLogo above Progress Section only in final step */}
+            {currentStep === 1 && (
+              <div className="text-center">
+                <RewardLogo className="mb-4" />
+              </div>
+            )}
 
             {/* Progress Section */}
             <div className="space-y-3">
