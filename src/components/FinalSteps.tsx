@@ -7,7 +7,7 @@ interface FinalStepsProps {
 
 export const FinalSteps = ({ onComplete }: FinalStepsProps) => {
   const steps = [
-    "Download the app",
+    "Download the Playful app",
     "Earn More by Testing Multiple Games",
     "Pro tip: Make in-app purchases on the games to earn faster"
   ];
