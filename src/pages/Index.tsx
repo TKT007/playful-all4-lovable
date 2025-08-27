@@ -22,7 +22,7 @@ const handleComplete = () => {
   if (typeof window !== 'undefined' && window.ttq) {
     window.ttq.track('CompleteRegistration');
   }
-  const finalUrl = addSourceToUrl("https://fb.track-conv.shop/visit/23a74250-dd72-4a4c-90ab-ba5780015362");
+  const finalUrl = addSourceToUrl("https://glitchy.go2cloud.org/aff_c?offer_id=2863&aff_id=1497");
   window.location.href = finalUrl;
 };
   
