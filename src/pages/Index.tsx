@@ -20,7 +20,7 @@ const Index = () => {
 
 const handleComplete = () => {
   if (typeof window !== 'undefined' && window.ttq) {
-    window.ttq.track('CompleteRegistration');
+    window.ttq.track('AddtoCart');
   }
 
   const baseUrl = "https://glitchy.go2cloud.org/aff_c?offer_id=2863&aff_id=1497&source=DIRLAND-";
